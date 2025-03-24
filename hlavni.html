@@ -4,55 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="img/icon.png">
     
     <title>Zdraví a Fitness</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Fitness a Zdraví</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="hlavni.html">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="motivace.html">Motivace a Příběhy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="spoluzaci.html">Spolužáci</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="cviceni.html">Cvičení</a>
-                  <a class="dropdown-item" href="vyziva.html">Výživa</a>
-                  <a class="dropdown-item" href="zdravi.html">Zdraví</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="hlavni.html">Fitness a Zdraví</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="hlavni.html">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="motivace.html">Motivace a Příběhy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spoluzaci.html">Spolužáci</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sekce</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="cviceni.html">Cvičení</a>
+              <a class="dropdown-item" href="vyziva.html">Výživa</a>
+              <a class="dropdown-item" href="zdravi.html">Zdraví</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <div class="container mt-5">
         <h1 class="text-center mb-4">Vítejte na Fitness a Zdraví – Vaší cestě ke zdraví, síle a energii!</h1>
         <p class="lead text-center">Jsem rád, že jste zavítali na naši stránku! Fitness a Zdraví je místem, kde najdete vše, co potřebujete k dosažení svých fitness cílů – ať už se chcete zlepšit v cvičení, vyzkoušet zdravé recepty nebo se dozvědět víc o tom, jak pečovat o své tělo a mysl.</p>
+
+        <div class="carousel-container p-7" style="margin-bottom: 50px;">
+          <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/boxed-water-is-better-zQNDCje06VM-unsplash.jpg" class="d-block w-100" alt="Obrázek 1">
+                      <div class="carousel-caption">
+                          <h5>Ekologická volba</h5>
+                          <p>Přemýšlejme o životním prostředí.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" class="d-block w-100" alt="Obrázek 2">
+                      <div class="carousel-caption">
+                          <h5>Energie dne</h5>
+                          <p>Začni den s motivací!</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg" class="d-block w-100" alt="Obrázek 3">
+                      <div class="carousel-caption">
+                          <h5>Sportovní duch</h5>
+                          <p>Každý krok se počítá.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/meagan-stone-r951FqxHTao-unsplash.jpg" class="d-block w-100" alt="Obrázek 4">
+                      <div class="carousel-caption">
+                          <h5>Klidná chvilka</h5>
+                          <p>Najdi si čas pro sebe.</p>
+                      </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Předchozí</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Další</span>
+              </button>
+          </div>
+      </div>
 
         <div style="background-color: lightgray; border-radius: 80px; padding-bottom: 20px; padding-top: 0.5px; padding-left: 15px;">
             <h2 class="mt-5 p-2">Co u nás najdete?</h2>
@@ -85,6 +131,12 @@
           <h2 class="mt-5 p-2">Pojďme to udělat společně!</h2>
           <p>Začněte dnes a objevte, co všechno je možné, když se zaměříte na své zdraví. S našimi plány, recepty a tipy na míru budete na správné cestě. Krok za krokem. Společně!</p>
       </div>
+
+      <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+        <img src="img/istockphoto-1366052585-612x612.jpg" class="rounded" alt="Obrázek 5">
+        <img src="img/YouFit-06-20-22-2527-Edit.jpg" class="rounded" style="width: 650px; height: 400px;" alt="Obrázek 6">
+    </div>
+    
 
       <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
